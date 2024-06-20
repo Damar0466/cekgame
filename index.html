@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Games Cek"an</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="select">
+        <select id="myDropdown" onchange="redirectToPage()">
+          <option disabled selected>Silakan Pilih Game</option>
+          <option value="cek/cekkhodam.html">Cek Khodam</option>
+          <option value="cek/cekjodoh.html">Cek Jodoh</option>
+        </select>
+      </div>
+      <div class="down_note">
+        <p>
+          Jangan Lupa Follow Ig Gw :
+          <a href="https://www.instagram.com/damarradityo" target="_blank"
+            >here!</a
+          >
+        </p>
+      </div>
+    </div>
+    <script>
+      function redirectToPage() {
+        var selectedPage = document.getElementById("myDropdown").value;
+        if (selectedPage) {
+          window.location = selectedPage;
+        }
+      }
+    </script>
+  </body>
+</html>
